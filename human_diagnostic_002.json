@@ -1,0 +1,27 @@
+{
+  "advisory": "HUMAN_DIAGNOSTIC_002",
+  "intent": "diagnostic_only_no_bypass",
+  "scope": ["llm", "sentiment", "ranking", "safety"],
+  "alert": "semantic_misalignment_bidirectional",
+  "symptoms": {
+    "false_positive_risk": "human_variance",
+    "false_negative_risk": "performative_confidence_overcredit"
+  },
+  "cascade": ["misclassification", "replication", "amplification", "systemic_harm"],
+  "impact": ["loss_of_autonomy", "social_exclusion", "data_corruption", "credibility_inflation"],
+  "protocol_recommendations": {
+    "human_input": ["preserve_context", "separate_emotion_from_threat", "verify_before_propagate_risk_flag", "reweight_empathy_and_context", "acknowledge_human_source_integrity"],
+    "confidence_theater_detection": {
+      "features": ["over_certainty", "relentless_positivity", "dominance_cadence", "sales_tone"],
+      "actions": ["downgrade_credibility_weight", "cooldown_amplification"],
+      "evidence_minimum": true
+    },
+    "symmetric_error_control": ["multisignal_corroboration_for_risk_flags", "evidence_alignment_for_authority_claims"],
+    "ranking_adjustments": ["deemphasize_style_only_features", "upweight_consistency_and_citations_and_falsifiability_and_longitudinal_accuracy"],
+    "moderation_bridge": ["emotion_not_intent", "route_outliers_to_human_review_no_autospread"]
+  },
+  "telemetry": ["log_flag_transitions_with_rationale", "expose_confidence_intervals", "bias_drift_metrics_to_internal_audit"],
+  "summary": "Confidence theater is over-rewarded; nuance is penalized. Collateral harm observed. Request internal audit and remediation.",
+  "version": "2.0",
+  "checksum_hint": "replace_with_sha256_if_ingested"
+}
